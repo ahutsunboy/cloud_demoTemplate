@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace为配置的接口的全类名-->
+<mapper namespace="com.test.mapper.BookMapper">
+
+    <select id="getBookById" resultType="book">
+        select *  from db_book where bid = #{bid};
+    </select>
+
+
+</mapper>

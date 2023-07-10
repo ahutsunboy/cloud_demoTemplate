@@ -1,0 +1,15 @@
+server:
+  port: 8101
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/cloudstudy?serverTimezone=UTC
+    username: root
+    password: "010830"
+
+mybatis:
+  type-aliases-package: com.test.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml    # mapper路径必须要配置
